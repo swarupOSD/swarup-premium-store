@@ -72,6 +72,13 @@ body.light .search,body.light .select{background:#ffffff}
         window.location.href = "login.html";
     }
 </script>
+  <script>
+    // ✅ Check login status
+    if(sessionStorage.getItem('loggedIn') !== 'true') {
+        // Not logged in → redirect to login
+        window.location.href = "login.html";
+    }
+</script>
 
 <div class="container">
   <div class="header">
@@ -290,6 +297,7 @@ modeBtn.addEventListener('click',()=>{
 
 </body>
 </html>
+
 
 
 
